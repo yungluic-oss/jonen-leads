@@ -13,7 +13,7 @@ type Lead = {
   notes: string;
 };
 
-type OutcomeMap = Record<string, "won" | "lost" | "pending" | "called">;
+type OutcomeMap = Record<string, "won" | "lost" | "pending" | "called" | "removed">;
 
 const STATUS_COLORS: Record<string, string> = {
   none: "bg-red-500/20 text-red-400 border-red-500/30",
@@ -27,6 +27,7 @@ const OUTCOME_COLORS: Record<string, string> = {
   won: "bg-emerald-500/20 text-emerald-400 border-emerald-500/40",
   lost: "bg-red-500/20 text-red-400 border-red-500/40",
   called: "bg-sky-500/20 text-sky-400 border-sky-500/40",
+  removed: "bg-zinc-500/20 text-zinc-500 border-zinc-500/40",
   pending: "",
 };
 
@@ -47,7 +48,7 @@ export default function Home() {
     if (saved) setOutcomes(JSON.parse(saved));
   }, []);
 
-  function saveOutcome(key: string, value: "won" | "lost" | "pending" | "called") {
+  function saveOutcome(key: string, value: "won" | "lost" | "pending" | "called" | "removed") {
     const next = { ...outcomes, [key]: value };
     setOutcomes(next);
     localStorage.setItem("jonen-outcomes", JSON.stringify(next));
@@ -64,6 +65,7 @@ export default function Home() {
       if (statusFilter !== "all" && l.website_status !== statusFilter) return false;
       const key = `${l.name}|${l.address}`;
       const outcome = outcomes[key] || "pending";
+      if (outcome === "removed" && outcomeFilter !== "removed") return false;
       if (outcomeFilter !== "all" && outcome !== outcomeFilter) return false;
       if (search) {
         const q = search.toLowerCase();
@@ -83,8 +85,9 @@ export default function Home() {
     const won = Object.values(outcomes).filter((v) => v === "won").length;
     const lost = Object.values(outcomes).filter((v) => v === "lost").length;
     const called = Object.values(outcomes).filter((v) => v === "called").length;
-    const pending = total - won - lost - called;
-    return { total, won, lost, called, pending };
+    const removed = Object.values(outcomes).filter((v) => v === "removed").length;
+    const pending = total - won - lost - called - removed;
+    return { total, won, lost, called, removed, pending };
   }, [leads, outcomes]);
 
   return (
@@ -153,6 +156,7 @@ export default function Home() {
             <option value="called">Called</option>
             <option value="won">Won</option>
             <option value="lost">Lost</option>
+            <option value="removed">Removed</option>
           </select>
           <span className="text-sm text-zinc-500 ml-auto">
             {filtered.length} leads
@@ -176,6 +180,8 @@ export default function Home() {
                     ? "border-emerald-500/30 bg-emerald-500/5"
                     : outcome === "lost"
                     ? "border-red-500/20 bg-red-500/5 opacity-60"
+                    : outcome === "removed"
+                    ? "border-zinc-700/30 bg-zinc-900/30 opacity-40"
                     : "border-zinc-800 bg-zinc-900/50 hover:border-zinc-700"
                 }`}
               >
@@ -220,7 +226,7 @@ export default function Home() {
                     <span
                       className={`shrink-0 rounded-md border px-2 py-0.5 text-xs font-medium ${OUTCOME_COLORS[outcome]}`}
                     >
-                      {outcome === "won" ? "WON" : outcome === "lost" ? "LOST" : "CALLED"}
+                      {outcome === "won" ? "WON" : outcome === "lost" ? "LOST" : outcome === "removed" ? "REMOVED" : "CALLED"}
                     </span>
                   )}
 
@@ -329,6 +335,16 @@ export default function Home() {
                         }`}
                       >
                         Lost
+                      </button>
+                      <button
+                        onClick={() => saveOutcome(key, "removed")}
+                        className={`rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${
+                          outcome === "removed"
+                            ? "border-zinc-500 bg-zinc-500/20 text-zinc-400"
+                            : "border-zinc-700 hover:border-zinc-500/50 hover:text-zinc-400"
+                        }`}
+                      >
+                        Remove
                       </button>
                       <button
                         onClick={() => saveOutcome(key, "pending")}
