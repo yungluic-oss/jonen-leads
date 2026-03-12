@@ -81,6 +81,27 @@ export default function Home() {
     });
   }, [leads, filter, statusFilter, outcomeFilter, search, outcomes]);
 
+  const statusCounts = useMemo(() => {
+    const counts: Record<string, number> = { none: 0, dead: 0, bad: 0, ok: 0 };
+    leads.forEach((l) => {
+      if (filter !== "all" && l.category !== filter) return;
+      const key = `${l.name}|${l.address}`;
+      const outcome = outcomes[key] || "pending";
+      if (outcome === "removed" && outcomeFilter !== "removed") return;
+      if (outcomeFilter !== "all" && outcome !== outcomeFilter) return;
+      if (search) {
+        const q = search.toLowerCase();
+        if (
+          !l.name.toLowerCase().includes(q) &&
+          !l.address.toLowerCase().includes(q) &&
+          !l.category.toLowerCase().includes(q)
+        ) return;
+      }
+      if (counts[l.website_status] !== undefined) counts[l.website_status]++;
+    });
+    return counts;
+  }, [leads, filter, outcomeFilter, search, outcomes]);
+
   const categoryCounts = useMemo(() => {
     const counts: Record<string, number> = {};
     leads.forEach((l) => {
@@ -193,10 +214,38 @@ export default function Home() {
           {sidebarOpen && (
             <div className="py-3 px-2">
               <div className="flex items-center justify-between px-2 mb-2">
-                <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">Categories</span>
+                <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">Status</span>
                 <button onClick={() => setSidebarOpen(false)} className="text-zinc-600 hover:text-zinc-400">
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
                 </button>
+              </div>
+              <button
+                onClick={() => setStatusFilter("all")}
+                className={`w-full flex items-center justify-between px-2 py-1.5 rounded-lg text-sm transition-colors ${statusFilter === "all" ? "bg-[#8ab8c9]/15 text-[#8ab8c9]" : "text-zinc-400 hover:bg-zinc-800 hover:text-zinc-200"}`}
+              >
+                <span>All</span>
+                <span className="text-xs tabular-nums">{statusCounts.none + statusCounts.dead + statusCounts.bad + statusCounts.ok}</span>
+              </button>
+              <div className="mt-1 space-y-0.5">
+                {([
+                  { key: "none", label: "No website", color: "text-red-400" },
+                  { key: "dead", label: "Dead", color: "text-orange-400" },
+                  { key: "bad", label: "Bad", color: "text-yellow-400" },
+                  { key: "ok", label: "Mediocre", color: "text-blue-400" },
+                ] as const).map(({ key: s, label, color }) => (
+                  <button
+                    key={s}
+                    onClick={() => setStatusFilter(statusFilter === s ? "all" : s)}
+                    className={`w-full flex items-center justify-between px-2 py-1.5 rounded-lg text-sm transition-colors ${statusFilter === s ? "bg-[#8ab8c9]/15 text-[#8ab8c9]" : `${color} hover:bg-zinc-800`}`}
+                  >
+                    <span>{label}</span>
+                    <span className="text-xs tabular-nums">{statusCounts[s]}</span>
+                  </button>
+                ))}
+              </div>
+
+              <div className="mt-4 mb-2 px-2">
+                <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">Categories</span>
               </div>
               <button
                 onClick={() => setFilter("all")}
