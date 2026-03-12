@@ -39,6 +39,7 @@ export default function Home() {
   const [outcomeFilter, setOutcomeFilter] = useState<string>("all");
   const [search, setSearch] = useState("");
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   useEffect(() => {
     fetch("/leads.json")
@@ -79,6 +80,27 @@ export default function Home() {
       return true;
     });
   }, [leads, filter, statusFilter, outcomeFilter, search, outcomes]);
+
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    leads.forEach((l) => {
+      if (statusFilter !== "all" && l.website_status !== statusFilter) return;
+      const key = `${l.name}|${l.address}`;
+      const outcome = outcomes[key] || "pending";
+      if (outcome === "removed" && outcomeFilter !== "removed") return;
+      if (outcomeFilter !== "all" && outcome !== outcomeFilter) return;
+      if (search) {
+        const q = search.toLowerCase();
+        if (
+          !l.name.toLowerCase().includes(q) &&
+          !l.address.toLowerCase().includes(q) &&
+          !l.category.toLowerCase().includes(q)
+        ) return;
+      }
+      counts[l.category] = (counts[l.category] || 0) + 1;
+    });
+    return counts;
+  }, [leads, statusFilter, outcomeFilter, search, outcomes]);
 
   const stats = useMemo(() => {
     const total = leads.length;
@@ -164,8 +186,52 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Lead list */}
-      <main className="mx-auto max-w-7xl px-4 py-4">
+      {/* Sidebar + Lead list */}
+      <div className="mx-auto max-w-7xl flex">
+        {/* Sidebar */}
+        <aside className={`sticky top-[130px] h-[calc(100vh-130px)] overflow-y-auto border-r border-zinc-800 bg-zinc-950/50 transition-all shrink-0 ${sidebarOpen ? "w-56" : "w-0 border-r-0"}`}>
+          {sidebarOpen && (
+            <div className="py-3 px-2">
+              <div className="flex items-center justify-between px-2 mb-2">
+                <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">Categories</span>
+                <button onClick={() => setSidebarOpen(false)} className="text-zinc-600 hover:text-zinc-400">
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+                </button>
+              </div>
+              <button
+                onClick={() => setFilter("all")}
+                className={`w-full flex items-center justify-between px-2 py-1.5 rounded-lg text-sm transition-colors ${filter === "all" ? "bg-[#8ab8c9]/15 text-[#8ab8c9]" : "text-zinc-400 hover:bg-zinc-800 hover:text-zinc-200"}`}
+              >
+                <span>All</span>
+                <span className="text-xs tabular-nums">{Object.values(categoryCounts).reduce((a, b) => a + b, 0)}</span>
+              </button>
+              <div className="mt-1 space-y-0.5">
+                {categories.filter((c) => (categoryCounts[c] || 0) > 0).sort((a, b) => (categoryCounts[b] || 0) - (categoryCounts[a] || 0)).map((cat) => (
+                  <button
+                    key={cat}
+                    onClick={() => setFilter(filter === cat ? "all" : cat)}
+                    className={`w-full flex items-center justify-between px-2 py-1.5 rounded-lg text-sm transition-colors ${filter === cat ? "bg-[#8ab8c9]/15 text-[#8ab8c9]" : "text-zinc-400 hover:bg-zinc-800 hover:text-zinc-200"}`}
+                  >
+                    <span className="truncate">{cat}</span>
+                    <span className="text-xs tabular-nums ml-2 shrink-0">{categoryCounts[cat] || 0}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </aside>
+
+        {/* Toggle sidebar button when closed */}
+        {!sidebarOpen && (
+          <button
+            onClick={() => setSidebarOpen(true)}
+            className="sticky top-[140px] h-8 w-6 flex items-center justify-center bg-zinc-900 border border-zinc-700 rounded-r-md text-zinc-500 hover:text-zinc-300 z-30"
+          >
+            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+          </button>
+        )}
+
+        <main className="flex-1 min-w-0 px-4 py-4">
         <div className="space-y-2">
           {filtered.map((lead) => {
             const key = `${lead.name}|${lead.address}`;
@@ -360,6 +426,7 @@ export default function Home() {
           })}
         </div>
       </main>
+      </div>
     </div>
   );
 }
