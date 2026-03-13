@@ -139,10 +139,10 @@
     "plz": "8916",
     "category": "Sanitär",
     "phone": "+41566341278",
-    "website": "https://firmen-ch.com",
-    "website_status": "ok",
-    "website_score": 55,
-    "notes": "No images; No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Kreativ & Gesundheitshaus Zum Löwen",
@@ -406,11 +406,11 @@
     "plz": "8909",
     "category": "Tierarzt",
     "phone": "+41438171727",
-    "website": "https://tierarztvergleich.ch",
-    "website_status": "ok",
-    "website_score": 65,
-    "notes": "",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Grosstierpraxis Regio AG Caspar",
@@ -467,11 +467,11 @@
     "plz": "8917",
     "category": "Tierarzt",
     "phone": "+41566341829",
-    "website": "https://pages24.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Honegger Rolf (-Vogel)",
@@ -480,10 +480,10 @@
     "plz": "8909",
     "category": "Tierarzt",
     "phone": "+41438171727",
-    "website": "https://swissdoc.net",
-    "website_status": "bad",
-    "website_score": 40,
-    "notes": "No nav; No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Garage Hagenbuch AG",
@@ -699,11 +699,11 @@
     "plz": "8907",
     "category": "Florist",
     "phone": "+41447002511",
-    "website": "https://business-informations.ch",
-    "website_status": "ok",
-    "website_score": 50,
-    "notes": "No contact",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Rosenkeller GmbH",
@@ -773,10 +773,10 @@
     "plz": "8917",
     "category": "Treuhand",
     "phone": "+41566342400",
-    "website": "https://pages24.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Vitalis Apotheke Drogerie Parfümerie",
@@ -857,11 +857,11 @@
     "plz": "8903",
     "category": "Apotheke",
     "phone": "+41447370470",
-    "website": "https://toppharm.ch",
-    "website_status": "ok",
-    "website_score": 65,
-    "notes": "",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Maler Leibi",
@@ -919,10 +919,10 @@
     "plz": "8038",
     "category": "Schlüsseldienst",
     "phone": "0544173374",
-    "website": "https://about.me",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Edelweiss Schliesstechnik AG",
@@ -1004,10 +1004,10 @@
     "plz": "8953",
     "category": "Schlüsseldienst",
     "phone": "+41447404935",
-    "website": "https://switzerland.worldplaces.me",
-    "website_status": "ok",
-    "website_score": 55,
-    "notes": "No images; No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Wunderl Klaus",
@@ -1246,10 +1246,10 @@
     "plz": "8913",
     "category": "Rechtsanwalt",
     "phone": "+41447612385",
-    "website": "https://todesanzeigenportal.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Nietlispach Fritz und Heidi (-Häuselmann)",
@@ -2081,10 +2081,10 @@
     "plz": "8905",
     "category": "Reifenservice",
     "phone": "0582010541",
-    "website": "https://garagencheck.ch",
-    "website_status": "bad",
-    "website_score": 40,
-    "notes": "No nav; No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "René Hächler AG - Deine Ford Garage/Werkstatt in der Region Affoltern am Albis, nahe Zug.",
@@ -2276,10 +2276,10 @@
     "plz": "8903",
     "category": "Kurier",
     "phone": "+41447614141",
-    "website": "https://all-in-schweiz.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Pizzakurier Fulmine Sami GmbH, Zweigniederlassung Birmensdorf",
@@ -2288,10 +2288,10 @@
     "plz": "8903",
     "category": "Kurier",
     "phone": "0582010541",
-    "website": "https://all-in-schweiz.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "TRANS-LOGIK BÜRGI",
@@ -2832,10 +2832,10 @@
     "plz": "8966",
     "category": "Zahntechnik",
     "phone": "+41566312207",
-    "website": "https://oberwil-lieli.opendi.ch",
-    "website_status": "ok",
-    "website_score": 50,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Sutter Rolf",
@@ -2856,10 +2856,10 @@
     "plz": "8919",
     "category": "Zahntechnik",
     "phone": "+41566342785",
-    "website": "https://telsearchschweiz.ch",
-    "website_status": "ok",
-    "website_score": 55,
-    "notes": "© 2017"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Hebamme Pia Stocker",
@@ -2904,11 +2904,11 @@
     "plz": "8004",
     "category": "Hebamme",
     "phone": "+41792467581",
-    "website": "https://flowbirthing.de",
-    "website_status": "ok",
-    "website_score": 55,
-    "notes": "No images; No contact",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Hebammenpraxis Zürich Hubertus",
@@ -3147,10 +3147,10 @@
     "plz": "5630",
     "category": "Getränkehandel",
     "phone": "+41566644670",
-    "website": "https://stayfriends.ch",
-    "website_status": "ok",
-    "website_score": 50,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Convenience4you.swiss GmbH",
@@ -3184,10 +3184,10 @@
     "plz": "8917",
     "category": "Lebensmittel",
     "phone": "+41792769688",
-    "website": "https://yoys.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "HO-Matic AG Alte",
@@ -3232,11 +3232,11 @@
     "plz": "8916",
     "category": "Buchhaltung",
     "phone": "+41566342645",
-    "website": "https://todesanzeigenportal.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Di mama Take-Away Ömer Arslan",
@@ -3380,10 +3380,10 @@
     "plz": "8001",
     "category": "Sushi",
     "phone": "0582010541",
-    "website": "https://ubereats.com",
-    "website_status": "ok",
-    "website_score": 50,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Restaurant BE HEROES - Sushi, Momos, Curry & Wok",
@@ -3416,11 +3416,11 @@
     "plz": "8052",
     "category": "Sushi",
     "phone": "+41764522122",
-    "website": "https://restaurant-reservieren-lieferservice.ch",
-    "website_status": "ok",
-    "website_score": 45,
-    "notes": "No nav",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Tavtai Mongolian Barbecue & Sushi",
@@ -3429,10 +3429,10 @@
     "plz": "8004",
     "category": "Sushi",
     "phone": "+41445553888",
-    "website": "https://restaurant-reservieren-lieferservice.ch",
-    "website_status": "ok",
-    "website_score": 45,
-    "notes": "No nav"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Vesu Sushi Bistro",
@@ -3478,10 +3478,10 @@
     "plz": "8905",
     "category": "Steuerberater",
     "phone": "+41566343765",
-    "website": "https://bizfinder.ch",
-    "website_status": "ok",
-    "website_score": 50,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Lipp Treuhand AG Lipp Treuhand AG Alte",
@@ -3731,11 +3731,11 @@
     "plz": "8905",
     "category": "Übersetzung",
     "phone": "+41793755843",
-    "website": "https://bookfactory.ch",
-    "website_status": "ok",
-    "website_score": 65,
-    "notes": "",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "English School",
@@ -3744,10 +3744,10 @@
     "plz": "5610",
     "category": "Sprachschule",
     "phone": "+41786699999",
-    "website": "https://englischkurse.info",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Lernen im Freiamt",
@@ -3792,10 +3792,10 @@
     "plz": "8917",
     "category": "Webdesign",
     "phone": "",
-    "website": "https://benchmak.com",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "F Federwerk",
@@ -3840,11 +3840,11 @@
     "plz": "5620",
     "category": "Grafik",
     "phone": "0582010541",
-    "website": "https://kompany.de",
-    "website_status": "bad",
-    "website_score": 30,
-    "notes": "No nav; No contact",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Jäckli Priska",
@@ -3878,10 +3878,10 @@
     "plz": "5636",
     "category": "Grafik",
     "phone": "",
-    "website": "https://benzenschwil.opendi.ch",
-    "website_status": "ok",
-    "website_score": 50,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Kuhn Stefan (-Noro)",
@@ -3890,10 +3890,10 @@
     "plz": "5620",
     "category": "Grafik",
     "phone": "",
-    "website": "https://kompany.at",
-    "website_status": "bad",
-    "website_score": 30,
-    "notes": "No nav; No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Larcher Martin",
@@ -3914,10 +3914,10 @@
     "plz": "8965",
     "category": "Grafik",
     "phone": "",
-    "website": "https://tootel.ch",
-    "website_status": "ok",
-    "website_score": 50,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Gallo AG",
@@ -3950,11 +3950,11 @@
     "plz": "8965",
     "category": "Bestattung",
     "phone": "+41565442122",
-    "website": "https://findhealthclinics.com",
-    "website_status": "ok",
-    "website_score": 65,
-    "notes": "",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "B Bestattungsamt",
@@ -4023,10 +4023,10 @@
     "plz": "8906",
     "category": "Kinderbekleidung",
     "phone": "",
-    "website": "https://firmen-ch.com",
-    "website_status": "ok",
-    "website_score": 55,
-    "notes": "No images; No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Manita Lederhandwerk",
@@ -4035,10 +4035,10 @@
     "plz": "5628",
     "category": "Schuhe",
     "phone": "",
-    "website": "https://pages24.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "VIMA Zweirad GmbH",
@@ -4275,11 +4275,11 @@
     "plz": "8001",
     "category": "Antiquitäten",
     "phone": "+41442615888",
-    "website": "https://zuri.net",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Galerie Rudolph Jungi",
@@ -4385,10 +4385,10 @@
     "plz": "5620",
     "category": "Spielwaren",
     "phone": "",
-    "website": "https://aargauerzeitung.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Lucky Pets GmbH Lucky Pets GmbH Am",
@@ -4880,10 +4880,10 @@
     "plz": "5623",
     "category": "Reitschule",
     "phone": "",
-    "website": "https://pferdeundreiter.com",
-    "website_status": "ok",
-    "website_score": 50,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Reitstall zum Ättenberg GmbH",
@@ -4928,10 +4928,10 @@
     "plz": "8055",
     "category": "DJ",
     "phone": "",
-    "website": "https://soul.st",
-    "website_status": "bad",
-    "website_score": 25,
-    "notes": "Sparse; No headings; No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "The Penthouse Zurich",
@@ -4940,11 +4940,11 @@
     "plz": "8055",
     "category": "DJ",
     "phone": "+41784105583",
-    "website": "https://zuerich.com",
-    "website_status": "bad",
-    "website_score": 40,
-    "notes": "No nav; No contact",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Schierok Eventplanung",
@@ -5230,10 +5230,10 @@
     "plz": "8932",
     "category": "Baumschule",
     "phone": "",
-    "website": "https://firmen-ch.com",
-    "website_status": "ok",
-    "website_score": 55,
-    "notes": "No images; No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Rippstein Hans (-Wagner)",
@@ -5591,11 +5591,11 @@
     "plz": "8914",
     "category": "Polsterei",
     "phone": "+41447603990",
-    "website": "https://mappsch.com",
-    "website_status": "ok",
-    "website_score": 45,
-    "notes": "No nav",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Werder Urs",
@@ -5749,11 +5749,11 @@
     "plz": "8001",
     "category": "Ferienwohnung",
     "phone": "+41442401160",
-    "website": "https://immobiliensektor.ch",
-    "website_status": "ok",
-    "website_score": 65,
-    "notes": "",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Robert Stammann Relaxed - Modern - Apartments",
@@ -5822,11 +5822,11 @@
     "plz": "8700",
     "category": "Ferienwohnung",
     "phone": "+41816671276",
-    "website": "https://kuesnacht-zh.opendi.ch",
-    "website_status": "ok",
-    "website_score": 50,
-    "notes": "No contact",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Meier Daniel und Nadine (-Munch)",
@@ -5835,10 +5835,10 @@
     "plz": "8051",
     "category": "Ferienwohnung",
     "phone": "",
-    "website": "https://todesanzeigenportal.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Riedweg AG Riedweg AG Hans",
@@ -5871,11 +5871,11 @@
     "plz": "5623",
     "category": "Pub",
     "phone": "",
-    "website": "https://corestaurant.ch",
-    "website_status": "ok",
-    "website_score": 65,
-    "notes": "",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Hollywood Pub",
@@ -6006,10 +6006,10 @@
     "plz": "5642",
     "category": "Käserei",
     "phone": "",
-    "website": "https://de.cdn-website.com",
-    "website_status": "dead",
+    "website": "",
+    "website_status": "none",
     "website_score": 0,
-    "notes": "1 words; No nav; Few links; No images; No headings; No contact; Empty DOM"
+    "notes": "No website found"
   },
   {
     "name": "Thalmann Walter Im",
@@ -6018,10 +6018,10 @@
     "plz": "8965",
     "category": "Käserei",
     "phone": "",
-    "website": "https://berikon.opendi.ch",
-    "website_status": "ok",
-    "website_score": 50,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Bier Paul",
@@ -6379,10 +6379,10 @@
     "plz": "8001",
     "category": "Reformhaus",
     "phone": "",
-    "website": "https://nachhaltigleben.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "R Reformhaus",
@@ -6391,10 +6391,10 @@
     "plz": "8001",
     "category": "Reformhaus",
     "phone": "",
-    "website": "https://nachhaltigleben.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "R Reformhaus",
@@ -6403,10 +6403,10 @@
     "plz": "8004",
     "category": "Reformhaus",
     "phone": "",
-    "website": "https://nachhaltigleben.ch",
-    "website_status": "ok",
-    "website_score": 60,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Drogerie und Reformhaus im Schwamedingerhuus",
@@ -6535,10 +6535,10 @@
     "plz": "8957",
     "category": "Bewässerung",
     "phone": "",
-    "website": "https://gartenbau-liste.ch",
-    "website_status": "ok",
-    "website_score": 50,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Blütengarten AG",
@@ -6681,10 +6681,10 @@
     "plz": "5620",
     "category": "Pferdesport",
     "phone": "",
-    "website": "https://zoohandlung-finden.ch",
-    "website_status": "ok",
-    "website_score": 50,
-    "notes": "No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Hundesalon Adonis GmbH",
@@ -6790,11 +6790,11 @@
     "plz": "8909",
     "category": "Hundesalon",
     "phone": "+41793201885",
-    "website": "https://rundum.dog",
-    "website_status": "bad",
-    "website_score": 30,
-    "notes": "No nav; Few links; No contact",
-    "rescanned": true
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Schneider Théo et Esther (-Krucker)",
@@ -6803,10 +6803,10 @@
     "plz": "8916",
     "category": "Schneider",
     "phone": "",
-    "website": "https://telsearchschweiz.ch",
-    "website_status": "ok",
-    "website_score": 55,
-    "notes": "© 2017"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "G Gubler-Sport",
