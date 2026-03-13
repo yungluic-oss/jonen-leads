@@ -142,7 +142,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Kreativ & Gesundheitshaus Zum Löwen",
@@ -215,7 +216,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "A. + L. Zimmermann Maschinen + Co.",
@@ -2279,7 +2281,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Pizzakurier Fulmine Sami GmbH, Zweigniederlassung Birmensdorf",
@@ -2291,7 +2294,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "TRANS-LOGIK BÜRGI",
@@ -2494,10 +2498,10 @@
     "plz": "5610",
     "category": "Logopädie",
     "phone": "+41566221805",
-    "website": "https://citymed.ch",
-    "website_status": "bad",
-    "website_score": 30,
-    "notes": "No nav; No contact"
+    "website": "",
+    "website_status": "none",
+    "website_score": 0,
+    "notes": "No website found"
   },
   {
     "name": "Füglistaller Luzia",
@@ -2787,7 +2791,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Praxis für Zahnprothesen Lorenzon",
@@ -3187,7 +3192,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "HO-Matic AG Alte",
@@ -3383,7 +3389,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Restaurant BE HEROES - Sushi, Momos, Curry & Wok",
@@ -3432,7 +3439,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Vesu Sushi Bistro",
@@ -3444,7 +3452,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "ROTH IMPACT",
@@ -3481,7 +3490,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Lipp Treuhand AG Lipp Treuhand AG Alte",
@@ -3747,7 +3757,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Lernen im Freiamt",
@@ -3795,7 +3806,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "F Federwerk",
@@ -3905,7 +3917,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Vaudroz Robert (-Pittana)",
@@ -4206,7 +4219,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Wohnform60 GmbH",
@@ -4883,7 +4897,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Reitstall zum Ättenberg GmbH",
@@ -4931,7 +4946,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "The Penthouse Zurich",
@@ -5029,7 +5045,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Wedding & Events GmbH",
@@ -5740,7 +5757,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "newhome.ch AG",
@@ -6538,7 +6556,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Blütengarten AG",
@@ -6684,7 +6703,8 @@
     "website": "",
     "website_status": "none",
     "website_score": 0,
-    "notes": "No website found"
+    "notes": "No website found",
+    "rescanned": false
   },
   {
     "name": "Hundesalon Adonis GmbH",
