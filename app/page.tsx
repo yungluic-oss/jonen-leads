@@ -11,6 +11,7 @@ type Lead = {
   website_status: string;
   website_score: number;
   notes: string;
+  rescanned?: boolean;
 };
 
 type OutcomeMap = Record<string, "won" | "lost" | "pending" | "called" | "removed">;
@@ -325,7 +326,15 @@ export default function Home() {
 
                   {/* Name + address */}
                   <div className="min-w-0 flex-1">
-                    <div className="font-medium truncate">{lead.name}</div>
+                    <div className="font-medium truncate flex items-center gap-1.5">
+                      {lead.rescanned && (
+                        <span className="relative flex h-2.5 w-2.5 shrink-0">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                        </span>
+                      )}
+                      {lead.name}
+                    </div>
                     <div className="text-sm text-zinc-500 truncate">
                       {lead.address}
                     </div>
